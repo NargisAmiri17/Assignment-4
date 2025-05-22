@@ -1,0 +1,254 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+    margin: 0px;
+    padding: 0px;
+    color: #333;
+}
+
+header {
+    background-color: #003049;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.site-logo {
+    width: 100px;
+    vertical-align: middle;
+    margin-right: 10px;
+    border-radius: 160px;
+    object-fit: cover;
+    animation: logo 9s linear infinite;
+}
+
+
+@keyframes logo {
+    0%{
+        filter: blur(0px);
+        transform: rotateY(0deg);
+    }
+    25%{
+        filter: brightness(70%);
+    }
+    50%{
+        filter: contrast(180%);
+    }
+    70%{
+        filter: grayscale(100%);
+    }
+    100%{
+        filter: saturate(4);
+        transform: rotateY(360deg);
+    }
+}
+
+.subtitle {
+    font-style: italic;
+    color: #ffe680;
+    margin-top: 5px;
+    animation: fadeln 2s ease-in;
+}
+@keyframes fadeln {
+    from { opacity: 0;}
+    to { opacity: 1;}
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 350px;
+}
+
+nav ul {
+    
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 20px 0 0 0;
+    gap: 30px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #ffd700;
+}
+
+.search-form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: auto;
+}
+
+.search-form input[type="text"] {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: 0.3s ease;
+    width: 180px;
+}
+
+.search-form input[type="text"]:focus {
+    border-color: #3ec6e0;
+    outline: none;
+}
+
+.search-form button {
+    padding: 8px 14px;
+    background-color: #3ec6e0;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-form button:hover {
+    background-color: #32a6c0;
+}
+
+main {
+    padding: 20px;
+}
+
+.city-section {
+    background-color: #fff;
+    margin: 30px auto;
+    padding: 20px;
+    border-left: 5px solid #386641;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.city-section h3 {
+    color: #2f3e46;
+}
+
+.city-section h4 {
+    margin-top: 15px;
+    color: #52796f;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 70%;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.city-of-day {
+    background-color: #e0e1dd;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.featured-city {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.featured-img {
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+
+.featured-img:hover {
+    transform: scale(1.05);
+}
+
+.featured-city p{
+    font-size: 1.1em;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.submit-section {
+    padding: 50px 20px;
+    background-color: #d0e0f0;
+    font-size:large;
+    font-weight: bold;
+}
+
+.submit-section h2 {
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea {
+    border-color: #004d66;
+    outline: none;
+}
+
+button {
+    background-color: #004d66;
+    color: white;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 03s ease;
+}
+
+button:hover {
+    background-color: #006080;
+}
+
+.site-footer {
+    background-color: #003049;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+.site-footer p {
+    margin: 5px 0;
+}
